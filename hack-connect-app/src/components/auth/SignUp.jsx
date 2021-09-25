@@ -7,6 +7,9 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { Link, Redirect } from 'react-router-dom';
+import { Checkbox } from '@material-ui/core';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -33,10 +36,11 @@ const SignUp = ({ setAlert, register, isAuthenticated }) => {
         name: '',
         email: '',
         password: '',
-        password2: ''
+        password2: '',
+        description: ''
     })
 
-    const { name, email, password, password2 } = formData
+    const { name, email, password, password2, description } = formData
 
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value})
 
@@ -118,6 +122,38 @@ const SignUp = ({ setAlert, register, isAuthenticated }) => {
                         onChange = {e => onChange(e)}
                         />
                     </Grid>
+                    
+                    <Grid item xs={8}>
+                        <FormGroup>
+                            <FormControlLabel control={<Checkbox defaultChecked />} label="Javascript" />
+                            <FormControlLabel control={<Checkbox />} label="Python" />
+                            <FormControlLabel control={<Checkbox />} label="PHP" />
+                        </FormGroup>
+                    </Grid>
+
+                    <Grid item xs={1}>
+                        <FormGroup>
+                            <FormControlLabel control={<Checkbox />} label="Java" />
+                            <FormControlLabel control={<Checkbox />} label="Express" />
+                            <FormControlLabel control={<Checkbox />} label="Node" />
+                        </FormGroup>
+                    </Grid>
+
+                    <Grid item xs={12}>
+                        <TextField
+                        variant="outlined"
+                        fullWidth
+                        multiline
+                        rows={4}
+                        name="description"
+                        label="Description"
+                        type="text"
+                        id="password2"
+                        value={description}
+                        onChange = {e => onChange(e)}
+                        />
+                    </Grid>
+
                 </Grid>
 
                 <Button
