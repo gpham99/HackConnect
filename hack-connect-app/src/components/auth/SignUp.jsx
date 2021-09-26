@@ -123,19 +123,40 @@ const SignUp = ({ setAlert, register, isAuthenticated }) => {
                         />
                     </Grid>
                     
-                    <Grid item xs={8}>
+                    <Grid 
+                        container
+                        direction="row"
+                        justifyContent="flex-start"
+                        alignItems="flex-start"
+                    >
+                        <Typography component="h1" variant="h6">
+                            Sign up
+                        </Typography>
+                    </Grid>
+
+                    <Grid container rowSpacing={2} item xs={8}>
                         <FormGroup>
-                            <FormControlLabel control={<Checkbox defaultChecked />} label="Javascript" />
                             <FormControlLabel control={<Checkbox />} label="Python" />
-                            <FormControlLabel control={<Checkbox />} label="PHP" />
+                            <FormControlLabel control={<Checkbox />} label="Node.js" />
+                            <FormControlLabel control={<Checkbox />} label="Redis" />
+                            <FormControlLabel control={<Checkbox />} label="Go" />
+                            <FormControlLabel control={<Checkbox />} label="Java" />
+                            <FormControlLabel control={<Checkbox />} label="C" />
+                            <FormControlLabel control={<Checkbox />} label="C++" />
+                            <FormControlLabel control={<Checkbox />} label="JavaScript" />
                         </FormGroup>
                     </Grid>
 
                     <Grid item xs={1}>
                         <FormGroup>
-                            <FormControlLabel control={<Checkbox />} label="Java" />
-                            <FormControlLabel control={<Checkbox />} label="Express" />
-                            <FormControlLabel control={<Checkbox />} label="Node" />
+                            <FormControlLabel control={<Checkbox />} label="Kotlin" />
+                            <FormControlLabel control={<Checkbox />} label="Objecive-C" />
+                            <FormControlLabel control={<Checkbox />} label="Swift" />
+                            <FormControlLabel control={<Checkbox />} label="Rails" />
+                            <FormControlLabel control={<Checkbox />} label="MySQL" />
+                            <FormControlLabel control={<Checkbox />} label="AngularJS" />
+                            <FormControlLabel control={<Checkbox />} label="React" />
+                            <FormControlLabel control={<Checkbox />} label="PHP" />
                         </FormGroup>
                     </Grid>
 
