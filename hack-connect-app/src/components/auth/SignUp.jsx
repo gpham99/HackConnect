@@ -136,27 +136,27 @@ const SignUp = ({ setAlert, register, isAuthenticated }) => {
 
                     <Grid container rowSpacing={2} item xs={8}>
                         <FormGroup>
-                            <FormControlLabel control={<Checkbox />} label="Python" />
-                            <FormControlLabel control={<Checkbox />} label="Node.js" />
-                            <FormControlLabel control={<Checkbox />} label="Redis" />
-                            <FormControlLabel control={<Checkbox />} label="Go" />
-                            <FormControlLabel control={<Checkbox />} label="Java" />
-                            <FormControlLabel control={<Checkbox />} label="C" />
-                            <FormControlLabel control={<Checkbox />} label="C++" />
-                            <FormControlLabel control={<Checkbox />} label="JavaScript" />
+                            <FormControlLabel control={<Checkbox />} label="Python" onChange = {e => onChange(e)} />
+                            <FormControlLabel control={<Checkbox />} label="Node.js" onChange = {e => onChange(e)} />
+                            <FormControlLabel control={<Checkbox />} label="Redis" onChange = {e => onChange(e)} />
+                            <FormControlLabel control={<Checkbox />} label="Go" onChange = {e => onChange(e)} />
+                            <FormControlLabel control={<Checkbox />} label="Java" onChange = {e => onChange(e)} />
+                            <FormControlLabel control={<Checkbox />} label="C" onChange = {e => onChange(e)} />
+                            <FormControlLabel control={<Checkbox />} label="C++" onChange = {e => onChange(e)} />
+                            <FormControlLabel control={<Checkbox />} label="JavaScript" onChange = {e => onChange(e)} />
                         </FormGroup>
                     </Grid>
 
                     <Grid item xs={1}>
                         <FormGroup>
-                            <FormControlLabel control={<Checkbox />} label="Kotlin" />
-                            <FormControlLabel control={<Checkbox />} label="Objecive-C" />
-                            <FormControlLabel control={<Checkbox />} label="Swift" />
-                            <FormControlLabel control={<Checkbox />} label="Rails" />
-                            <FormControlLabel control={<Checkbox />} label="MySQL" />
-                            <FormControlLabel control={<Checkbox />} label="AngularJS" />
-                            <FormControlLabel control={<Checkbox />} label="React" />
-                            <FormControlLabel control={<Checkbox />} label="PHP" />
+                            <FormControlLabel control={<Checkbox />} label="Kotlin" onChange = {e => onChange(e)} />
+                            <FormControlLabel control={<Checkbox />} label="Objecive-C" onChange = {e => onChange(e)} />
+                            <FormControlLabel control={<Checkbox />} label="Swift" onChange = {e => onChange(e)} />
+                            <FormControlLabel control={<Checkbox />} label="Rails" onChange = {e => onChange(e)} />
+                            <FormControlLabel control={<Checkbox />} label="MySQL" onChange = {e => onChange(e)} />
+                            <FormControlLabel control={<Checkbox />} label="AngularJS" onChange = {e => onChange(e)} />
+                            <FormControlLabel control={<Checkbox />} label="React" onChange = {e => onChange(e)} />
+                            <FormControlLabel control={<Checkbox />} label="PHP" onChange = {e => onChange(e)} />
                         </FormGroup>
                     </Grid>
 
